@@ -22,6 +22,7 @@
   height: 100vh;
   width: 100vw;
   transition: 0.7s;
+  z-index: 0;
 }
 
 .color1{
@@ -55,20 +56,66 @@
 .goLeft{
   position: absolute;
   left: 0;
-  top: 50%;
+  top: 45%;
+  border: 5px solid red;
+  transform: rotate(180deg);
+  z-index: 1;
 }
 .goRight{
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 45%;
+  border: 5px solid red;
+  z-index: 1;
 }
 .goUp{
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 47%;
+  border: 5px solid red;
+  transform: rotate(-90deg);
+  z-index: 1;
 }
 .goDown{
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 47%;
+  border: 5px solid red;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.arrow {
+  width: 5vw;
+  height: 10vh;
+}
+//middle buttons
+.position0-100{
+  border: 5px solid white;
+}
+.position-100-100{
+  border: 5px solid black;
+}
+.position-200-100{
+  border: 5px solid red;
+}
+//upper buttons
+.position00{
+  border: 5px solid yellow;
+}
+.position-1000{
+  border: 5px solid orange;
+}
+.position-2000{
+  border: 5px solid violet;
+}
+//bottom buttons
+.position-0-200{
+  border: 5px solid grey;
+}
+.position-100-200{
+  border: 5px solid green;
+}
+.position-200-200{
+  border: 5px solid purple;
 }

@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200;0,400;1,300&display=swap');
+
+.container__japan{
+  background-image: url('../../static/images/japanese.png');
+  font-family: 'Newsreader', serif;
+  height: 100%;
+}
+
+.container__japan_center {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.6), rgba(244, 140, 6, 0.7));
+}
+
+.container__japan_title {
+  border-bottom: 5px solid rgba(244, 140, 6);
+}

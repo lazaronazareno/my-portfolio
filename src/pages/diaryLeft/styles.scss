@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
+.container__diary{
+  background-image: url('../../static/images/wordcloud.jpg');
+  font-family: 'Cormorant Garamond', serif;
+  background-size: contain;
+  height: 100%;
+}
+
+.container__diary_center {
+  background: linear-gradient(to top, rgba(108, 117, 125, 0.6), rgba(0, 0, 0, 0.7));
+}
+
+.container__diary_title {
+  border-bottom: 5px solid rgba(108, 117, 125);
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+.container__pastel{
+  background-image: url('../../static/images/backpas.png');
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: -10px;
+  font-family: 'Source Code Pro', monospace;
+  height: 100%;
+}
+
+.container__pastel_center {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.7) , rgba(255, 255, 255, 0.7));
+  border: 5px solid #9D8189 ;
+}
+
+.container__pastel_title {
+  border-bottom: 5px solid #9D8189;
+}

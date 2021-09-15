@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
+import DiaryLeft from '../../pages/diaryLeft';
+import PixelCenter from '../../pages/pixelCenter';
 import './styles.scss'
+import arrow from '../../static/images/arrow.png'
+import MusicRight from '../../pages/musicRight';
+import JapanUp from '../../pages/japanUp';
+import PastelTopRIght from '../../pages/pastelTopRight';
 
 
 function Slider() {
@@ -25,21 +31,21 @@ function Slider() {
               top left
             </div>
              <div className="divChild color2" style={{ transform: `translate(${x}%,${y}%)` }}>
-              top
+              <JapanUp />
             </div>
             <div className="divChild color3" style={{ transform: `translate(${x}%,${y}%)` }}>
-              top right
+              <PastelTopRIght />
             </div>
         </div>
         <div className="divFather">
-            <div className="divChild color4" style={{ transform: `translate(${x}%,${y}%)` }}>
-              left
+            <div className="divChild" style={{ transform: `translate(${x}%,${y}%)` }}>
+              <DiaryLeft/>
             </div>
              <div className="divChild color5" style={{ transform: `translate(${x}%,${y}%)` }}>
-              center
+               <PixelCenter />
             </div>
             <div className="divChild color6" style={{ transform: `translate(${x}%,${y}%)` }}>
-              right
+              <MusicRight />
             </div>
         </div>
         <div className="divFather">
@@ -53,10 +59,10 @@ function Slider() {
               bottom right
             </div>
         </div>
-      <button type="button" className="goLeft" onClick={goLeft}>left</button>
-      <button type="button" className="goRight"  onClick={goRight}>right</button>
-      <button type="button" className="goUp" onClick={goUp}>up</button>
-      <button type="button" className="goDown" onClick={goDown}>down</button>
+      <div className={`goLeft position${x}${y}`} onClick={goLeft}><img className="arrow" src={arrow} alt="Kiranshastry"/></div>
+      <div className={`goRight position${x}${y}`}  onClick={goRight}><img className="arrow" src={arrow} alt="Kiranshastry"/></div>
+      <div className={`goUp position${x}${y}`} onClick={goUp}><img className="arrow" src={arrow} alt="Kiranshastry"/></div>
+      <div className={`goDown position${x}${y}`} onClick={goDown}><img className="arrow" src={arrow} alt="Kiranshastry"/></div>
       </div>
     </div>
   );
