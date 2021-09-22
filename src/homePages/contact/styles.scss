@@ -1,0 +1,23 @@
+.container__contact {
+  height: 100vh;
+}
+
+.container__contact input  {
+  border: none;
+  border-bottom: solid 1vh orange;
+  margin: 1vh;
+  width: 15vw;
+  background-color: #444;
+  color: #ffffff;
+}
+
+.container__contact textarea  {
+  border: none;
+  border-bottom: solid 1vh orange;
+  margin: 1vh;
+  resize: none;
+  width: 15vw;
+  height: 10vh;
+  background-color: #444;
+  color: #ffffff;
+}
