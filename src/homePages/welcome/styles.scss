@@ -1,43 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 @font-face {
   font-family: steelfish;
   src: url('../../static/fonts/steelfish.outline-regular.ttf');
 }
-.container__welcome {
+.welcome-container {
   height: 100vh;
   background: linear-gradient(180deg, #202020 50% , #ffd100 50%);
 }
 
-.container__title {
+.welcome-container__title {
   color: #ffffffdb;
-  font-family: steelfish;
-  font-size: 20vh;
-  padding-bottom: 10vh;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12vh;
   text-align: center;
+  margin-bottom: 13vw;
 }
 
-.container__text {
-  font-family: steelfish;
-  font-size: 10vh;
+.welcome-container__text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 6vh;
   color: #000814;
-  padding-top: 5vh;
+  padding: 2vw;
 }
 
-.container__icons {
+.welcome-container__icons {
   padding: 2vh;
 }
 
-.container__icon {
+.welcome-container__icon {
   width: 10vw;
   height: 10vh;
 }
 
-.container__arrow {
+.welcome-container__arrow {
   animation: heartbeat 1.5s ease-in-out infinite both;
 }
 
-.container__arrow_icon {
+.welcome-container__arrow_icon {
   width: 5vw;
   height: 20vh;
   transform: rotate(90deg);
