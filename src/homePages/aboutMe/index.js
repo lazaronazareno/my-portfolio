@@ -11,12 +11,52 @@ import n5 from '../../static/images/n5.png'
 import node from '../../static/images/nodejs.png'
 import sql from '../../static/images/mysql.png'
 
+const skills = [ 
+  { name: "Html",
+    description: "HTML es el lenguaje estándar para crear páginas web.",
+    img: html,
+    alt : "html icon"
+  },
+  { name: "Css",
+    description: "CSS es el lenguaje para estilizar un documento HTML",
+    img: css,
+    alt : "css icon"
+  },
+  { name: "JavaScript",
+    description: "Js, orientado a objetos, permite 'darle vida' a la página",
+    img: js,
+    alt : "js icon"
+  },
+  { name: "Git",
+    description: "Git es un software de control de versiones",
+    img: git,
+    alt : "js icon"
+  },
+]
+
+const learningSkills = [
+  { name: "NodeJs",
+  description: "HTML es el lenguaje estándar para crear páginas web.",
+  img: node,
+  alt : "node js nodejs icon"
+  },
+  { name: "MySql",
+    description: "HTML es el lenguaje estándar para crear páginas web.",
+    img: sql,
+    alt : "mysql sql icon"
+  }
+]
+
 
 function AboutMe() {
-  const [show, setShow] = useState(false)
+  const [show, setShow] = useState(-1)
 
-  const handleClick = () => {
-    setShow(!show)
+  const handleClick = (id) => {
+    setShow(id)
+  }
+
+  const handleBack = () => {
+    setShow(5)
   }
 
   return (
@@ -35,22 +75,17 @@ function AboutMe() {
       </div>
       <h1 className="about-container__title">CONOCIMIENTOS:</h1>
       <div className="d-flex about-container__skills justify-content-evenly">
-        <div className="about-container__card" onClick={() => handleClick()}>
-          <img className="about-container__icon" src={html} alt="html icon"/>
-          <span className="about-container__hidden">Html</span>
-        </div>
-        <div className="about-container__card">
-          <img className="about-container__icon" src={css} alt="css icon"/>
-          <span className="about-container__hidden">Css</span>
-        </div>
-        <div className="about-container__card">
-          <img className="about-container__icon" src={js} alt="js icon"/>
-          <span className="about-container__hidden">JavaScript</span>
-        </div>
-        <div className="about-container__card">
-          <img className="about-container__icon" src={git} alt="git icon"/>
-          <span className="about-container__hidden">Git</span>
-        </div>
+        { skills.map( (element, index) => (
+          <div className="about-container__card">
+            <div onClick={() => handleClick(index)}>
+              <img className={`${show !== index ? "about-container__icon" : "about-container__show-not"}`} src={element.img} alt={element.alt}/>
+            </div>
+            <div className={`about-container__hidden-card ${show !== index ? "" : "about-container__show text-light"}`}>
+              <span>{element.description}</span>
+              <button className="btn btn-warning" onClick={() => handleBack()}>Regresar</button>
+            </div>
+          </div>
+        ))}
       </div>
       <div className="d-flex about-container__skills justify-content-evenly">
         <div>
@@ -69,14 +104,17 @@ function AboutMe() {
         <div>
           <span className="about-container__title">APRENDIENDO :</span>
           <div className="d-flex justify-content-evenly">
-            <div className="about-container__card">
-              <img className="about-container__icon" src={node} alt="node js nodejs icon"/>
-              <span className="about-container__hidden">Node JS</span>
+          { learningSkills.map( (element, index) => (
+          <div className="about-container__card">
+            <div onClick={() => handleClick(index)}>
+              <img className={`${show !== index ? "about-container__icon" : "about-container__show-not"}`} src={element.img} alt={element.alt}/>
             </div>
-            <div className="about-container__card">
-              <img className="about-container__icon" src={sql} alt="mysql sql icon"/>
-              <span className="about-container__hidden">MySql</span>
+            <div className={`about-container__hidden-card ${show !== index ? "" : "about-container__show text-light"}`}>
+              <span>{element.description}</span>
+              <button className="btn btn-warning" onClick={() => handleBack()}>Regresar</button>
             </div>
+          </div>
+        ))}
           </div>
         </div>
       </div>
