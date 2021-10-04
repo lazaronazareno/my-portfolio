@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
 
 @font-face {
-  font-family: steelfish;
-  src: url('../../static/fonts/steelfish.outline-regular.ttf');
+  font-family: optic;
+  src: url('../../static/fonts/OPTICompit-Light.otf');
 }
 .welcome-container {
   height: 100vh;
@@ -13,7 +13,7 @@
 .welcome-container__title {
   color: #ffffffdb;
   font-family: 'Orbitron', sans-serif;
-  font-size: 12vh;
+  font-size: 10vh;
   text-align: center;
   margin-bottom: 13vw;
 }
