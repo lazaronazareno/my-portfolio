@@ -9,8 +9,13 @@
 
 .about-container___profile-img {
   width: 15vw;
-  border: 2px solid black;
+  height: 25vh;
+  border: 2px solid #FB8500;
   border-radius: 1vw;
+}
+
+ul {
+  list-style: square;
 }
 
 .about-container__info {
@@ -19,6 +24,7 @@
 
 .about-container__title {
   font-size: 3vw;
+  border-bottom: 2px solid #FB8500 ;
 }
 
 .about-container__skills {
@@ -66,11 +72,26 @@
   border-radius: 1vw;
   justify-content: center;
   text-align: center;
-  font-size: larger;
+  font-size: 2vh;
+}
+
+.about-container__button {
+  height: 2.5vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #FB8500!important;  
+  border: none!important;
 }
 
 .about-container__show-not {
   display: none;
+}
+
+.about-container__subskills {
+  width: 50vw;
+  text-align: center;
+  padding: 1vh;
 }
 
 /* ----------------------------------------------
