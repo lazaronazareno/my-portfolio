@@ -1,13 +1,20 @@
 import React from 'react'
 import './styles.scss'
+import info from '../../static/icons/info.svg'
 
 function Contact() {
   return (
-    <div className="container-fluid d-flex flex-column bg-info container__contact justify-content-center align-items-center">
-      <div className="container d-flex flex-column justify-content-center align-items-center bg-light">
-      <h1>Contacto</h1>
+    <div className="container-fluid d-flex flex-column contact-container justify-content-center align-items-center">
+      <div className="container d-flex flex-column justify-content-center align-items-center contact-container__form">
+				<div className="d-flex">
+      	<h1 className="pe-2">Contacto</h1>
+				<div className="contact-container__info d-flex">
+					<img className="contact-container__info-icon" src={info} alt="info icon iconos8" />
+					<span className="contact-container__tooltip">Se enviará un mail con la informacion introducida</span>
+				</div>
+				</div>
       <form className="d-flex flex-column justify-content-center align-items-end">
-					<div md={12} className='form-group'>
+					<div className='form-group'>
 						<label label="Name">Nombre</label>
             <input 
               placeholder='texto de prueba'
@@ -15,7 +22,7 @@ function Contact() {
 							name='name'
 						/>
 					</div>
-					<div md={12} className='form-group'>
+					<div className='form-group'>
 						<label label="Email">Email</label>
             <input
               placeholder='texto de prueba' 
@@ -23,7 +30,7 @@ function Contact() {
 							name='email'
 						/>
 					</div>
-					<div md={12} className='form-group'>
+					<div className='form-group d-flex'>
 						<label label="contact">Consulta</label>
             <textarea
               placeholder='texto de prueba'
@@ -32,7 +39,7 @@ function Contact() {
 							name='contact'
 						/>
 					</div>
-          <button type='submit' className="btn btn-warning">Enviar</button>
+          <button type='submit' className="contact-container__button d-flex align-self-center">Enviar</button>
       </form>
       </div>
     </div>
