@@ -1,6 +1,10 @@
 .contact-container {
-  height: 100vh;
+  height: 50vh;
   background-color: #202020 ;
+}
+
+.contact-container__title {
+  font-size: 3vw;
 }
 
 .contact-container__info-icon {
@@ -26,7 +30,7 @@
 
 .contact-container input  {
   border: none;
-  border-bottom: solid 1vh #FB8500;
+  border-bottom: solid 1vh #ffb703;
   margin: 1vh;
   width: 50vw;
   background-color: #444;
@@ -38,7 +42,7 @@
 
 .contact-container textarea  {
   border: none;
-  border-bottom: solid 1vh #FB8500;
+  border-bottom: solid 1vh #ffb703;
   margin: 1vh;
   resize: none;
   width: 50vw;
@@ -50,6 +54,11 @@
 .contact-container__form {
   background-color: #D6D6D6;
   font-size: 2vh;
+  padding: 1vh;
+}
+
+.contact-container__form-group {
+  font-size: 1.5vw;
 }
 
 .contact-container__button {
@@ -57,8 +66,8 @@
   width: 5vw;
   font-size: 2.5vh;
   color: #000;
-  background-color: #FB8500;
-  border-color: #FB8500;
+  background-color: #ffb703;
+  border-color: #ffb703;
   text-align: center;
   text-decoration: none;
   cursor: pointer;

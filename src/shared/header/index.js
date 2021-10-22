@@ -8,10 +8,9 @@ function Header() {
         <span>Portfolio</span>
       </div>
       <div className='justify-self-end container__menu'>
-        <span>Sobre Mí</span>
-        <span>Conocimientos</span>
-        <span>Contacto</span>
+        <span>Sobre Mí / Conocimientos</span>
         <span>Página alternativa</span>
+        <span>Contacto</span>
       </div>
     </header>
   )

@@ -4,13 +4,38 @@
 }
 
 .container__menu {
-  min-width: 30vw;
+  min-width: 35vw;
 }
 
 .container__menu span {
-  padding: 1vh 2vh;
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 0 5px;
+  position: relative;
   cursor: pointer;
+
   &:hover {
-    background: linear-gradient(to top, rgba(244, 140, 6, 0.7), rgba(255, 255, 255, 0.6));
+    color: white;
+    transition: all 0.3s ease-out;
+    }
+  
+  &:hover:after {
+    width: 100%;
   }
+    &:after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      background-color: white;
+      content: '';
+      display: block;
+      height: 1px;
+      transform: translate(-50%, -50%);
+      transition: width 0.3s ease-out;
+      width: 0;
+      text-decoration: inherit;
+      box-sizing: inherit;
+      background-repeat: inherit;
+    }
 }

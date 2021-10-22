@@ -70,7 +70,7 @@ function AboutMe() {
       <div className="about-container__profile align-items-center d-flex">
         <img className="about-container___profile-img" src={me} alt="Lázaro Vega Sanchez profile" /> 
         <div className="d-flex flex-column about-container__info">
-          <h1 className="about-container__title ps-3">SOBRE MÍ</h1>
+          <h1 className="about-container__title ps-3 about-container__border-bottom">SOBRE MÍ</h1>
           <ul >
           <li className="fs-4">{info.name}</li>
           <li className="fs-4">{info.date}</li>
