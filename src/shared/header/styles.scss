@@ -16,7 +16,7 @@
   cursor: pointer;
 
   &:hover {
-    color: white;
+    color:  #444;
     transition: all 0.3s ease-out;
     }
   
@@ -27,7 +27,7 @@
       position: absolute;
       top: 100%;
       left: 50%;
-      background-color: white;
+      background-color:  #444;
       content: '';
       display: block;
       height: 1px;
