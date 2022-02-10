@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './styles.scss'
-import page from '../../static/images/mostaza 2.png'
 import page1 from '../../static/images/page1.png'
+import page2 from '../../static/images/page2.png'
 import page3 from '../../static/images/page3.png'
 import page4 from '../../static/images/page4.png'
 import arrow from '../../static/images/arrow.png'
@@ -13,9 +13,9 @@ const proyects = [
     link : "https://alkemy-react-challenge.web.app/"
   },
   { name: "Quotes App",
-    description: "App de prueba que se hizo para medir conocimientos al iniciar Alkemy, posee un login con contraseña y muestra varias citas, se pueden ver en detalle, editarlas y borrarlas",
-    img: page,
-    link : "www"
+    description: "App de prueba que se hizo para medir conocimientos al iniciar Alkemy, posee un login(mismas credenciales que la pagina anterior) y muestra varias citas , se pueden ver en detalle, editarlas y borrarlas",
+    img: page2,
+    link : "https://alkemy-warmup.web.app/"
   },
   { name: "Pagina de Devil in the Details",
     description: "Web de prueba para un emprendimiento, la primera pagina que desarrolle por mi cuenta, la idea era copiar el diseño de la pagina del anime wonder egg y aplicarlo con las imagenes e informacion del proyecto.",
