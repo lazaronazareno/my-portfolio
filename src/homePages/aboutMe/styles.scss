@@ -58,6 +58,11 @@ ul {
   cursor: pointer;
 }
 
+.about-container__icon-jlpt {
+  width: 10vw;
+  height: 15vh;
+}
+
 .about-container__hidden-card {
   transform: rotateY(180deg);
   animation: slit-in-vertical 0.45s ease-out both;

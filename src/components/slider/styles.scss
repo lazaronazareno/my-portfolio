@@ -21,7 +21,7 @@
 .divChild {
   height: 100vh;
   width: 100vw;
-  transition: 0.7s;
+  transition: all 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860); /* easeInOutCirc */
   z-index: 0;
 }
 
@@ -59,14 +59,16 @@
   top: 45%;
   transform: rotate(180deg);
   z-index: 1;
+  -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
 }
 .goRight{
   position: absolute;
   right: 0;
   top: 45%;
   z-index: 1;
-  -webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
-  animation: pulsate-bck 1.5s ease-in-out infinite both;
+  -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
 }
 .goUp{
   position: absolute;
@@ -74,6 +76,8 @@
   left: 47%;
   transform: rotate(-90deg);
   z-index: 1;
+  -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
 }
 .goDown{
   position: absolute;
@@ -81,40 +85,79 @@
   left: 47%;
   transform: rotate(90deg);
   z-index: 1;
+  -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+  animation: pulsate-bck 2.5s ease-in-out infinite both;
+}
+
+%arrow {
+  width: 5.5vw;
+  height: 10vh;
+  cursor: pointer;
 }
 
 .arrow {
+  @extend %arrow
+}
+.arrowUp {
+  transform: rotate(-90deg)!important;
+  @extend %arrow;
+}
+.arrowDown {
+  transform: rotate(90deg)!important;
+  @extend %arrow;
+}
+.arrowLeft {
+  transform: rotate(180deg)!important;
+  @extend %arrow;
+}
+
+.back{
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
   width: 5vw;
-  height: 10vh;
-	-webkit-animation: pulsate-bck 1.5s ease-in-out infinite both;
-          animation: pulsate-bck 1.5s ease-in-out infinite both;
+  height: 5vh;
+  font-size: xx-large;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 }
 //middle buttons
 .position0-100{
   border: 5px solid white;
+  color: white;
 }
 .position-100-100{
-  border: 5px solid black;
+  border: 5px solid white;
+  color: white;
 }
 .position-200-100{
   border: 5px solid red;
+  color:red;
 }
 //upper buttons
 .position00{
-  border: 5px solid yellow;
+  border: 5px solid orange;
+  color: black;
 }
 .position-1000{
-  border: 5px solid orange;
+  border: 5px solid lightcyan;
+  color:black;
 }
 .position-2000{
-  border: 5px solid violet;
+  border: 5px solid yellow;
+  color:yellow;
 }
 //bottom buttons
 .position-0-200{
   border: 5px solid grey;
+  color:grey;
 }
 .position-100-200{
   border: 5px solid green;
+  color:green;
 }
 .position-200-200{
   border: 5px solid purple;

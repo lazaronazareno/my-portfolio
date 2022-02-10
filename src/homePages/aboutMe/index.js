@@ -66,7 +66,7 @@ function AboutMe() {
   }
 
   return (
-    <div className="container-fluid d-flex flex-column about-container justify-content-center align-items-center">
+    <div id="About" className="container-fluid d-flex flex-column about-container justify-content-center align-items-center">
       <div className="about-container__profile align-items-center d-flex">
         <img className="about-container___profile-img" src={me} alt="Lázaro Vega Sanchez profile" /> 
         <div className="d-flex flex-column about-container__info">
@@ -82,7 +82,7 @@ function AboutMe() {
       <h1 className="about-container__title">CONOCIMIENTOS:</h1>
       <div className="d-flex about-container__skills justify-content-evenly">
         { skills.map( (element, index) => (
-          <div className="about-container__card">
+          <div className="about-container__card" key={index}>
             <div onClick={() => handleSkills(index)}>
               <img className={`${showSkills !== index ? "about-container__icon" : "about-container__show-not"}`} src={element.img} alt={element.alt}/>
             </div>
@@ -98,12 +98,12 @@ function AboutMe() {
           <span className="about-container__title">IDIOMAS :</span>
           <div className="d-flex justify-content-evenly">
             <div className="about-container__card">
-              <img className="about-container__icon" src={efset} alt=" official efset test certificate"/>
-              <span className="about-container__hidden">Ingles C1 Avanzado</span>
+              <a target="_blank" rel="noopener noreferrer" href="https://www.efset.org/cert/sLQyXc">
+                <img className="about-container__icon" src={efset} alt=" official efset test certificate"/>
+              </a>
             </div>
             <div className="about-container__card">
-              <img className="about-container__icon" src={n5} alt="jlpt n5"/>
-              <span className="about-container__hidden">JLPT N5* Pendiente</span>
+              <img className="about-container__icon-jlpt" src={n5} alt="jlpt n5"/>
             </div>
           </div>
         </div>
@@ -111,7 +111,7 @@ function AboutMe() {
           <span className="about-container__title">APRENDIENDO :</span>
           <div className="d-flex justify-content-evenly">
           { learningSkills.map( (element, index) => (
-          <div className="about-container__card">
+          <div className="about-container__card" key={index}>
             <div onClick={() => handleLearning(index)}>
               <img className={`${showLearning !== index ? "about-container__icon" : "about-container__show-not"}`} src={element.img} alt={element.alt}/>
             </div>

@@ -1,12 +1,28 @@
-.bonus-container {
+%bonus-container {
   height: 50vh;
+  width: 50%;
   background-color: #ffb703 ;
+}
+
+.bonus-container-cert {
+  background-color: #D6D6D6;
+  @extend %bonus-container
+}
+
+.bonus-container-more {
+  background-color: #ffd100;
+  @extend %bonus-container
 }
 
 .bonus-container__title {
   border-bottom: 2px solid black;
 }
 
-.bonus-container__text {
-  font-size: 3.5vh;
+.bonus-container__links {
+  text-decoration: none;
+  color: black;
+  padding: 3vh;
+  &:hover{
+    color: lightskyblue;
+  }
 }

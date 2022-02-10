@@ -1,5 +1,6 @@
 import React from 'react'
 import { useFormik } from 'formik'
+import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
 import './styles.scss'
 import info from '../../static/icons/info.svg'
@@ -7,7 +8,17 @@ import info from '../../static/icons/info.svg'
 function Contact() {
 
  	const handleSubmit = (body) => {
- 		console.log(body)
+		 console.log(body)
+		 emailjs.send(
+			 'service_zaffh1o',
+			'template_cu3xb8e',
+			 body,
+			'user_uuaZWRuinu7WssaYBABeH'
+				).then(res=>{
+					console.log(res)
+				}).catch(err=>{
+					console.log(err)
+				})
  	}
 
 	const validationSchema = Yup.object({
@@ -27,7 +38,7 @@ function Contact() {
 	 })
 	 
   return (
-    <div className="container-fluid d-flex flex-column contact-container justify-content-center align-items-center">
+    <div id="Contact" className="container-fluid d-flex flex-column contact-container justify-content-center align-items-center">
       <div className="container d-flex flex-column justify-content-center align-items-center contact-container__form">
 				<div className="d-flex">
       	<h1 className="pe-2 contact-container__title">Contacto</h1>

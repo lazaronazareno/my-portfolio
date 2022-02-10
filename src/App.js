@@ -1,8 +1,8 @@
-import './App.css';
+import React from 'react'
 import { BrowserRouter, Route, Switch } from "react-router-dom";
+import './App.css';
 import Home from './components/home';
 import Slider from './components/slider';
-import Layout from './shared/layout';
 import NotFound from './shared/notFound';
 
 

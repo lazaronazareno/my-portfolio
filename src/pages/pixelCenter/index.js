@@ -11,10 +11,10 @@ function PixelCenter() {
         <h1 className="container__pixel_title">Bienvenidos</h1>
         <div className="d-flex align-items-center">
           <span>
-            Esta es la version alternativa(de prueba) que es algo mas "salvaje", algo que no parece tanto una pagina web
-            pero a mi me gusta como quedo. Basicamente es una galeria multidireccional como yo lo llamo.
-            El objetivo fue hacer una portfolio basado en el dibujo que realice durante mi primer curso
-            y sé que no esta tal cual lo imagine, pero se acerca bastante.
+            Esta es la version alternativa (test) que no es algo habitual en una pagina web
+            pero a mi me gusta como quedo. El objetivo final es un carousel multidireccional.
+            La idea era hacer portfolio basado en el dibujo que realice durante mi primer curso de desarrollo web
+            y sé que no esta tal cual lo imagine, pero se acerca bastante:
           </span>
         </div>
           <img className="container__pixel_img" src={diseño} alt="Mi primer wireframe" data-bs-toggle="modal" data-bs-target="#exampleModal" />
@@ -23,12 +23,15 @@ function PixelCenter() {
               <img className="container__pixel_modalImg rounded" src={diseño} alt="Mi primer wireframe" />
             </div>
           </div>  
-        <span>Me presento nuevamente Soy Lazaro y este es mi portfolio, espero lo disfrutes tanto como yo disfrute hacerlo.</span>
-        <span>Cada sección es distinta y va contando distintos aspectos de mi vida.</span>
-        <span>enlaces</span>
+        <span>Me presento nuevamente Soy Lazaro y este es mi nuevo intento de portfolio, es mucho mas informal que el anterior pero es por él estilo que le quiero dar, espero te resulte entretenido.</span>
+        <span>Cada sección es distinta y contiene informacion sobre mí.</span>
         <div>
-          <img className="container__pixel_icon" src={github} alt="Github" />
-          <img className="container__pixel_icon" src={linkedin} alt="Linkedin" />
+          <a target="_blank" rel="noopener noreferrer" href="https://github.com/lazaronazareno" className="container__pixel_icon">
+            <img className="container__pixel_icon" src={github} alt="Github" />
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/lazaro-vega-sanchez" className="container__pixel_icon">
+            <img className="container__pixel_icon" src={linkedin} alt="Linkedin" />
+          </a>
         </div>
       </div>
     </div>

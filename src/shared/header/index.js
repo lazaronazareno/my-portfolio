@@ -5,12 +5,13 @@ function Header() {
   return (
     <header className='container-fluid d-flex position-fixed container__header text-center align-items-center' >
       <div className="container d-flex container__logo">
-        <span>Portfolio</span>
+        <a className="container__logo-a" href="#Welcome">Portfolio</a>
       </div>
       <div className='justify-self-end container__menu'>
-        <span>Sobre Mí / Conocimientos</span>
-        <span>Página alternativa</span>
-        <span>Contacto</span>
+        <a href="#About">Sobre Mí / Conocimientos</a>
+        <a href="#Works">Proyectos</a>
+        <a href="#Bonus">Certifícados</a>
+        <a href="#Contact">Contacto</a>
       </div>
     </header>
   )

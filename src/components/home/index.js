@@ -12,8 +12,8 @@ function Home() {
     <Layout>
       <Welcome />
       <AboutMe />
-      <BonusPage />
       <Works />
+      <BonusPage />
       <Contact />
     </Layout>
   )
