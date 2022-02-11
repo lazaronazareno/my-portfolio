@@ -46,3 +46,44 @@
     height: 100%;
   }
 }
+
+@media (max-width: 550px) {
+  .bonus-container-cert__div {
+    flex-direction: column;
+  }
+
+  .bonus-container__links {
+    display: flex;
+    padding: 0 25px;
+  }
+
+  .responsive-img {
+    width: 17.5vh;
+    height: 10vh;
+  }
+
+  .bonus-container-more {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:400px){
+  .bonus-container {
+    height: 160vh;
+  }
+  %bonus-container {
+    height: 80vh;
+  }
+}
+
+@media (max-width:1020px){
+  .container__menu {
+    width: 70vw;
+  }
+}
+
+@media (max-width:900px){
+  .container__menu {
+    width: 110vw;
+  }
+}

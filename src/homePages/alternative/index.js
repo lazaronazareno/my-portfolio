@@ -12,13 +12,17 @@ function BonusPage() {
         <div className="d-flex bonus-container-cert__div align-items-center justify-content-around">
           <a target="_blank" rel="noopener noreferrer" href="https://assets.alkemy.org/certificates/auth0%7C60f9cfed31de08001aba5a5f/16b3f3cf-65e3-4f8e-9fdf-6d8e68d415e1.pdf" className="bonus-container__links">
             <img className="" src={alkemy} alt="Alkemy Certificado" />
-            <h1>Certificación Alkemy</h1>
-            <span className="fs-5">Perfil Job-Ready React: Autentificion de usuarios, Inttegracion con API`s externas, Manejo del estado y diseño de vistas</span>
+            <div>
+              <h1>Certificación Alkemy</h1>
+              <span className="fs-5">Perfil Job-Ready React: Autentificación de usuarios, Integración con API`s externas, Manejo del estado y diseño de vistas</span>
+            </div>
           </a>
           <a target="_blank" rel="noopener noreferrer" href="https://mumuki.io/argentina-programa/certificates/verify/BC_2JZb6_QrrgJlQ" className="bonus-container__links">
-            <img className="" src={argp} alt="Argentina Programa Certificado" />
-            <h1>Certificacion #SéProgramar</h1>
-            <span className="fs-5">Conocimientos basico de Javascript y Ruby. Actualmente cursando la segunda etapa del programa.</span>
+            <img className="responsive-img" src={argp} alt="Argentina Programa Certificado" />
+            <div>
+              <h1>Certificacion #SéProgramar</h1>
+              <span className="fs-5">Conocimientos basico de Javascript y Ruby. Actualmente cursando la segunda etapa del programa.</span>
+            </div>
           </a>
         </div>
       </div>

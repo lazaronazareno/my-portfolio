@@ -103,8 +103,23 @@ ul {
 }
 
 @media (max-width: 710px) {
+  .about-container {
+    height: 120vh;
+  }
+
+  .about-container__profile {
+    flex-direction: column;
+  }
+
   .about-container___profile-img {
     width: 25vw;
+  }
+
+  .about-container__info {
+    width: 95vw;
+  }
+  .about-container__border-bottom {
+    align-self: center;
   }
 
   .about-container__show {

@@ -62,7 +62,7 @@
 .container__header-responsive {
   position: absolute;
   top: 5vh;
-  right: -45vh;
+  right: -60vh;
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -73,7 +73,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  transform: translateX(-45vh);
+  transform: translateX(-60vh);
   transition: transform 0.5s ease-in-out;
 }
 
@@ -110,4 +110,10 @@
     position: absolute;
   }
 
+}
+
+@media (max-width: 550px) {
+  .container__logo {
+    padding: 0 25px;
+  }
 }
