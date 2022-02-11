@@ -117,3 +117,15 @@
     padding: 0 25px;
   }
 }
+
+@media (max-width:1020px){
+  .container__menu {
+    width: 70vw;
+  }
+}
+
+@media (max-width:900px){
+  .container__menu {
+    width: 115vw;
+  }
+}
