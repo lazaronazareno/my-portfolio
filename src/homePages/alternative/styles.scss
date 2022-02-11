@@ -9,6 +9,11 @@
   @extend %bonus-container
 }
 
+.bonus-container-cert__div {
+  width: 75%;
+  height: 50%;
+}
+
 .bonus-container-more {
   background-color: #ffd100;
   @extend %bonus-container
@@ -24,5 +29,20 @@
   padding: 3vh;
   &:hover{
     color: lightskyblue;
+  }
+}
+
+@media (max-width: 900px){
+  .bonus-container {
+    flex-direction: column;
+  }
+  %bonus-container {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .bonus-container-cert__div {
+    width: 100%;
+    height: 100%;
   }
 }

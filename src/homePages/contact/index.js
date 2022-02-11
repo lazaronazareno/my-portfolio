@@ -44,38 +44,40 @@ function Contact() {
       	<h1 className="pe-2 contact-container__title">Contacto</h1>
 				<div className="contact-container__info d-flex">
 					<img className="contact-container__info-icon" src={info} alt="info icon iconos8" />
-					<span className="contact-container__tooltip">Se enviará un mail con la informacion introducida</span>
+					<span className="contact-container__tooltip fs-3">Se enviará un mail con la informacion introducida</span>
 				</div>
 				</div>
       <form className="d-flex flex-column justify-content-center align-items-end" onSubmit={formik.handleSubmit}>
 					<div className='contact-container__form-group'>
-						<label label="Name">Nombre</label>
+						<label className="fs-3" label="Name">Nombre</label>
             <input 
 							type='text'
 							name='name'
+							className="fs-3"
  							value={formik.values.name}
  							onChange={formik.handleChange}
  							isValid={formik.values.name && !formik.errors.name}
  							isInvalid={formik.errors.name}
 						/>
 					</div>
-					<span type="invalid">{formik.errors.name}</span>
+					<span className="fs-3" type="invalid">{formik.errors.name}</span>
 					<div className='contact-container__form-group'>
-						<label label="Email">Email</label>
+						<label className="fs-3" label="Email">Email</label>
             <input
 							type='text'
 							name='email'
+							className="fs-3"
 							value={formik.values.email}
 							onChange={formik.handleChange}
 							isValid={formik.values.email && !formik.errors.email}
 							isInvalid={formik.errors.email}
 						/>
 					</div>
-					<span type="invalid">{formik.errors.email}</span>
+					<span className="fs-3" type="invalid">{formik.errors.email}</span>
 					<div className='contact-container__form-group d-flex'>
-						<label label="Message">Consulta</label>
+						<label className="fs-3" label="Message">Consulta</label>
             <textarea
-              className="d-flex" 
+              className="d-flex fs-3" 
 							type='text'
 							name='message'
 							value={formik.values.message}
@@ -84,7 +86,7 @@ function Contact() {
 							isInvalid={formik.errors.message}
 						/>
 					</div>
-					<span type="invalid">{formik.errors.message}</span>
+					<span className="fs-3" type="invalid">{formik.errors.message}</span>
           <button type='submit' className="contact-container__button d-flex align-self-center">Enviar</button>
       </form>
       </div>

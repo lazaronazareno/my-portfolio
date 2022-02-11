@@ -6,10 +6,10 @@ import './styles.scss'
 
 function BonusPage() {
   return (
-    <div id="Bonus" className="container-fluid d-flex p-0 justify-content-center align-items-center">
+    <div id="Bonus" className="container-fluid bonus-container d-flex p-0 justify-content-center align-items-center">
       <div className="bonus-container-cert d-flex flex-column align-items-center justify-content-center ">
         <h1 className="bonus-container__title">Certificados</h1>
-        <div className="d-flex w-75 h-50 align-items-center justify-content-around">
+        <div className="d-flex bonus-container-cert__div align-items-center justify-content-around">
           <a target="_blank" rel="noopener noreferrer" href="https://assets.alkemy.org/certificates/auth0%7C60f9cfed31de08001aba5a5f/16b3f3cf-65e3-4f8e-9fdf-6d8e68d415e1.pdf" className="bonus-container__links">
             <img className="" src={alkemy} alt="Alkemy Certificado" />
             <h1>Certificación Alkemy</h1>

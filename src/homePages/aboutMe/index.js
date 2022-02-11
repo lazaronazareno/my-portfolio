@@ -70,7 +70,7 @@ function AboutMe() {
       <div className="about-container__profile align-items-center d-flex">
         <img className="about-container___profile-img" src={me} alt="Lázaro Vega Sanchez profile" /> 
         <div className="d-flex flex-column about-container__info">
-          <h1 className="about-container__title ps-3 about-container__border-bottom">SOBRE MÍ</h1>
+          <h1 className="ps-3 about-container__border-bottom">SOBRE MÍ</h1>
           <ul >
           <li className="fs-4">{info.name}</li>
           <li className="fs-4">{info.date}</li>
@@ -82,7 +82,7 @@ function AboutMe() {
       <h1 className="about-container__title">CONOCIMIENTOS:</h1>
       <div className="d-flex about-container__skills justify-content-evenly">
         { skills.map( (element, index) => (
-          <div className="about-container__card" key={index}>
+          <div key={index}>
             <div onClick={() => handleSkills(index)}>
               <img className={`${showSkills !== index ? "about-container__icon" : "about-container__show-not"}`} src={element.img} alt={element.alt}/>
             </div>
@@ -95,11 +95,11 @@ function AboutMe() {
       </div>
       <div className="d-flex about-container__skills justify-content-evenly">
         <div className="about-container__subskills">
-          <span className="about-container__title">IDIOMAS :</span>
+          <h1>IDIOMAS :</h1>
           <div className="d-flex justify-content-evenly">
             <div className="about-container__card">
               <a target="_blank" rel="noopener noreferrer" href="https://www.efset.org/cert/sLQyXc">
-                <img className="about-container__icon" src={efset} alt=" official efset test certificate"/>
+                <img className="about-container__icon about-container__icon-efset" src={efset} alt=" official efset test certificate"/>
               </a>
             </div>
             <div className="about-container__card">
@@ -108,7 +108,7 @@ function AboutMe() {
           </div>
         </div>
         <div className="about-container__subskills">
-          <span className="about-container__title">APRENDIENDO :</span>
+          <h1>APRENDIENDO :</h1>
           <div className="d-flex justify-content-evenly">
           { learningSkills.map( (element, index) => (
           <div className="about-container__card" key={index}>

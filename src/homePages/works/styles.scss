@@ -69,3 +69,9 @@
   width: 4vw;
   transform: rotate(180deg);
 }
+
+@media (max-width: 900px) {
+  .works-proyects-container__slider-image {
+    width: 100%;
+  }
+}
