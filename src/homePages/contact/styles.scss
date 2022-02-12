@@ -1,5 +1,5 @@
 .contact-container {
-  height: 50vh;
+  height: 60vh;
   background-color: #202020 ;
 }
 
@@ -73,6 +73,14 @@
     background-color: #fb9900;
     border-color: #fb9900;
   }
+}
+
+.hidden-message {
+  display: none;
+}
+
+.hidden-message-show {
+  display: flex;
 }
 
 @media (max-width: 900px) {

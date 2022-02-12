@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useFormik } from 'formik'
 import emailjs from 'emailjs-com'
 import * as Yup from 'yup'
@@ -6,8 +6,11 @@ import './styles.scss'
 import info from '../../static/icons/info.svg'
 
 function Contact() {
+	const [showResponse, setShowResponse] = useState({
+		message:null
+	})
 
- 	const handleSubmit = (body) => {
+ 	const handleSubmit = async (body) => {
 		 console.log(body)
 		 emailjs.send(
 			 'service_zaffh1o',
@@ -16,8 +19,10 @@ function Contact() {
 			'user_uuaZWRuinu7WssaYBABeH'
 				).then(res=>{
 					console.log(res)
+					setShowResponse({message: res.text})
 				}).catch(err=>{
 					console.log(err)
+					setShowResponse({message: err.text})
 				})
  	}
 
@@ -88,6 +93,12 @@ function Contact() {
 					</div>
 					<span className="fs-3" type="invalid">{formik.errors.message}</span>
           <button type='submit' className="contact-container__button d-flex align-self-center">Enviar</button>
+					{ showResponse.message === "OK" &&(
+						<h1>El mensaje se ha enviado satisfactoriamente.</h1>
+					)}
+					{ showResponse.message && showResponse.message !== "OK" &&(
+						<h1>Se ha producido un error : {showResponse.message}</h1>
+					)}
       </form>
       </div>
     </div>
