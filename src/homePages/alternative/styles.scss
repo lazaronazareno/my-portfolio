@@ -73,3 +73,9 @@
     flex-direction: column;
   }
 }
+
+@media (min-width: 2000px) {
+  .fs-5 {
+    font-size: 1vw!important;
+  }
+}
